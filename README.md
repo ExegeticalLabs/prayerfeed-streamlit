@@ -1,35 +1,25 @@
-# PrayerFeed Prototype
+# One Another by Koinonia
 
-This workspace now includes two runnable prototypes:
+React + Vite prototype.
 
-- React/Vite app (`src/PrayerFeedApp.jsx`)
-- Streamlit app (`streamlit_app.py`) for Streamlit Community Cloud
-
-## Run Streamlit locally
-
-```bash
-pip install -r requirements.txt
-npm install
-npm run build
-streamlit run streamlit_app.py
-```
-
-The Streamlit app embeds the built React prototype from `dist/`.
-
-## Deploy on Streamlit Community Cloud
-
-1. Build the React app locally (`npm run build`).
-2. Commit and push the `dist/` folder with the rest of the project.
-3. Go to [share.streamlit.io](https://share.streamlit.io/) and click **New app**.
-4. Select your repo/branch.
-5. Set **Main file path** to `streamlit_app.py`.
-6. Deploy.
-
-Streamlit will use `requirements.txt` automatically.
-
-## Run React version locally (optional)
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
+
+## Production build
+
+```bash
+npm run build
+```
+
+## Deploy on Vercel
+
+1. Push this repo to GitHub.
+2. Go to [https://vercel.com/new](https://vercel.com/new).
+3. Import the repo.
+4. Deploy.
+
+This repo includes `vercel.json` configured for Vite.
